@@ -1,0 +1,1280 @@
+/*
+Theme: Theme Machine
+Author: Orchard Team – http://www.orchardproject.net
+Copyright: 2010, Orchard. All Rights Reserved
+*/
+/*  Color Palette
+**************************************************************
+
+Background: #fff
+Borders: #dbdbdb
+Text: #434343
+Secondary Text: #999999
+Main Accent: #999
+Links: #5f97af
+*/
+/* Reset
+***************************************************************/
+/* line 31, SiteBase.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* Remember focus styles! */
+/* line 44, SiteBase.scss */
+:focus {
+  outline: 0;
+}
+
+/* line 46, SiteBase.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* Tables still need 'cellspacing="0"' in the markup */
+/* line 49, SiteBase.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* line 50, SiteBase.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+/* line 53, SiteBase.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+/* line 54, SiteBase.scss */
+blockquote, q {
+  quotes: "" "";
+}
+
+/* HTML 5 elements as block */
+/* line 57, SiteBase.scss */
+header, footer, aside, nav, article {
+  display: block;
+}
+
+/* Clearing Floats
+***************************************************************/
+/* line 67, SiteBase.scss */
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 76, SiteBase.scss */
+.zone:after, .widget-control:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* General
+***************************************************************/
+/* Default font settings. 
+The font-size 81.3% sets the base font to 13px 
+
+Pixels     EMs         Percent Points
+6px     0.462em     46.2%     5pt
+7px     0.538em     53.8%     5pt
+8px     0.615em     61.5%     6pt
+9px     0.692em     69.2%     7pt
+10px     0.769em     76.9%     8pt
+11px     0.846em     84.6%     8pt
+12px     0.923em     92.3%     9pt
+13px     1em         100%     10pt
+14px     1.077em     107.7%     11pt
+15px     1.154em     115.4%     11pt
+16px     1.231em     123.1%     12pt
+17px     1.308em     130.8%     13pt
+18px     1.385em     138.5%     14pt
+19px     1.462em     146.2%     14pt
+20px     1.538em     153.8%     15pt
+21px     1.615em     161.5%     16pt
+22px     1.692em     169.2%     17pt
+23px     1.769em     176.9%     17pt
+24px     1.846em     184.6%     18pt
+*/
+/* line 114, SiteBase.scss */
+body {
+  line-height: 1;
+  font-size: 81.3%;
+  color: #434343;
+  background: #fff;
+  font-family: Tahoma, "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+/* Headings */
+/* line 123, SiteBase.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: .6em 0;
+}
+
+/* line 125, SiteBase.scss */
+h1 {
+  font-size: 1.308em;
+}
+
+/* line 126, SiteBase.scss */
+h2 {
+  font-size: 1.231em;
+}
+
+/* line 127, SiteBase.scss */
+h3 {
+  font-size: 1.154em;
+}
+
+/* line 128, SiteBase.scss */
+h4 {
+  font-size: 1.077em;
+}
+
+/* line 129, SiteBase.scss */
+h5 {
+  font-size: 1em;
+}
+
+/* line 130, SiteBase.scss */
+h6 {
+  font-size: 1em;
+}
+
+/* line 133, SiteBase.scss */
+h1 img, h2 img, h3 img,
+h4 img, h5 img, h6 img {
+  margin: 0;
+}
+
+/* Aside Headings */
+/* line 138, SiteBase.scss */
+aside h1 {
+  font-size: 1.154em;
+}
+
+/* line 139, SiteBase.scss */
+aside h2 {
+  font-size: 1.077em;
+}
+
+/* line 140, SiteBase.scss */
+aside h3 {
+  font-size: 1em;
+}
+
+/* line 141, SiteBase.scss */
+aside h4 {
+  font-size: 1em;
+}
+
+/* line 142, SiteBase.scss */
+aside h5 {
+  font-size: 1em;
+}
+
+/* line 143, SiteBase.scss */
+aside h6 {
+  font-size: 1em;
+}
+
+/* Lists */
+/* line 147, SiteBase.scss */
+li ul,
+li ol {
+  margin: 0 1.5em;
+}
+
+/* line 148, SiteBase.scss */
+ul, ol {
+  margin: 1.5em;
+  line-height: 1.538em;
+}
+
+/* line 150, SiteBase.scss */
+ul {
+  list-style-type: disc;
+}
+
+/* line 151, SiteBase.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 153, SiteBase.scss */
+dl {
+  margin: 0 0 1.5em 0;
+}
+
+/* line 154, SiteBase.scss */
+dl dt {
+  font-weight: bold;
+}
+
+/* line 155, SiteBase.scss */
+dd {
+  margin-left: 1.5em;
+}
+
+/* Text elements */
+/* line 158, SiteBase.scss */
+p {
+  margin: 0 0 1em;
+  line-height: 1.538em;
+}
+
+/* line 159, SiteBase.scss */
+p img.left {
+  float: left;
+  margin: 0.923em 0.923em 0.923em 0;
+  padding: 0;
+}
+
+/* line 160, SiteBase.scss */
+p img.right {
+  float: right;
+  margin: 0.923em 0 0.923em 0.923em;
+}
+
+/* line 163, SiteBase.scss */
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 164, SiteBase.scss */
+a {
+  color: #5f97af;
+  text-decoration: none;
+}
+
+/* line 166, SiteBase.scss */
+blockquote {
+  margin: 0.923em;
+  color: #666;
+  font-style: italic;
+}
+
+/* line 167, SiteBase.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 168, SiteBase.scss */
+em, dfn {
+  font-style: italic;
+}
+
+/* line 169, SiteBase.scss */
+dfn {
+  font-weight: bold;
+}
+
+/* line 170, SiteBase.scss */
+sup, sub {
+  line-height: 0;
+}
+
+/* line 173, SiteBase.scss */
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+}
+
+/* line 174, SiteBase.scss */
+address {
+  margin: 0 0 0.923em;
+  font-style: italic;
+}
+
+/* line 175, SiteBase.scss */
+del {
+  color: #666;
+}
+
+/* line 177, SiteBase.scss */
+pre {
+  margin: 0.923em 0;
+  white-space: pre;
+}
+
+/* line 178, SiteBase.scss */
+pre, code, tt {
+  font: 1em 'andale mono', 'lucida console', monospace;
+  line-height: 1.462em;
+}
+
+/* Forms
+***************************************************************/
+/* line 185, SiteBase.scss */
+form {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 186, SiteBase.scss */
+legend {
+  font-size: 1.231em;
+  font-weight: normal;
+  border: none;
+}
+
+/* line 187, SiteBase.scss */
+fieldset {
+  padding: 6px 0 0;
+  margin: 0 0 12px 0;
+  border: 0px solid #dbdbdb;
+}
+
+/* line 188, SiteBase.scss */
+label {
+  font-weight: normal;
+  display: block;
+  padding: 0 0 0.3em 0;
+}
+
+/* line 189, SiteBase.scss */
+label.forcheckbox {
+  margin: 0 0 0 .4em;
+  display: inline;
+}
+
+/* line 191, SiteBase.scss */
+input[type="text"], input[type="password"] {
+  display: block;
+  padding: 0.3em;
+}
+
+/* line 196, SiteBase.scss */
+input[type="checkbox"] {
+  margin: .2em 0 1.2em 0;
+}
+
+/* line 200, SiteBase.scss */
+fieldset ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 201, SiteBase.scss */
+fieldset ol li {
+  margin: 0 0 6px 0;
+}
+
+/* line 203, SiteBase.scss */
+form.inline, form.inline fieldset {
+  /* todo: (heskew) need something other than .inline ... */
+  display: inline;
+}
+
+/* line 207, SiteBase.scss */
+form.inline fieldset {
+  margin: 0;
+}
+
+/* line 211, SiteBase.scss */
+input[type="checkbox"]:focus, input[type="radio"]:focus {
+  outline: 1px dotted #666d51;
+}
+
+/* line 215, SiteBase.scss */
+input[readonly] {
+  background-color: #EBEBE4;
+  color: #545454;
+}
+
+/* line 220, SiteBase.scss */
+legend span {
+  font-weight: normal;
+}
+
+/* line 223, SiteBase.scss */
+label span {
+  font-weight: normal;
+}
+
+/* line 226, SiteBase.scss */
+label input {
+  vertical-align: text-top;
+}
+
+/* line 229, SiteBase.scss */
+.hint {
+  display: block;
+  font-size: 0.846em;
+  color: #999;
+  margin-top: 3px;
+  padding: 3px;
+}
+
+/* todo: (heskew) try to get .text on stuff like .text-box */
+/* line 237, SiteBase.scss */
+select, textarea, input.text, input.textMedium, input.text-small, input.text-box {
+  font-family: inherit;
+  padding: 3px;
+  border: 1px solid #bdbcbc;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* line 244, SiteBase.scss */
+input.text, input.textMedium, input.text-box {
+  line-height: 1.2em;
+}
+
+/*Are we using the two classes below?*/
+/* line 248, SiteBase.scss */
+input.text-small, input.text.small {
+  width: 4em;
+}
+
+/* line 251, SiteBase.scss */
+input.textMedium, input.text.medium {
+  width: 26em;
+}
+
+/* line 254, SiteBase.scss */
+select {
+  padding: 1px;
+}
+
+/* line 257, SiteBase.scss */
+select:focus, textarea:focus, input.text:focus, input.text-box:focus, input.text-small:focus, input.textMedium:focus {
+  border-color: #666d51;
+}
+
+/* line 260, SiteBase.scss */
+input.check-box {
+  margin-left: 0;
+  vertical-align: -0.1em;
+}
+
+/* line 264, SiteBase.scss */
+input.large.text, textarea, fieldset {
+  clear: both;
+}
+
+/* line 268, SiteBase.scss */
+textarea {
+  min-height: 8em;
+}
+
+/* Structure
+***************************************************************/
+/* line 276, SiteBase.scss */
+#layout-header, #layout-featured, #layout-before-main, #layout-main, #layout-footer, #layout-after-main, #layout-tripel {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* Navigation */
+/* line 283, SiteBase.scss */
+#layout-navigation {
+  width: 960px;
+  margin: 0 auto;
+  display: block;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+/* line 291, SiteBase.scss */
+nav ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 297, SiteBase.scss */
+nav ul li {
+  border: 1px solid #dbdbdb;
+  background: #f6f6f6;
+  display: block;
+  margin: 0 2px -1px 0;
+}
+
+/* line 304, SiteBase.scss */
+nav > ul li.current {
+  border-bottom: 1px solid #fff;
+  background: #fff;
+}
+
+/* line 309, SiteBase.scss */
+nav ul li a {
+  padding: 0 18px;
+  display: block;
+  color: #333;
+  font-size: 1.077em;
+  text-decoration: none;
+  line-height: 24px;
+}
+
+/* first level */
+/* line 320, SiteBase.scss */
+nav > ul > li {
+  float: left;
+}
+
+/* line 321, SiteBase.scss */
+nav > ul > li > a {
+  float: left;
+}
+
+/* line 322, SiteBase.scss */
+nav > ul > li:hover > ul {
+  display: block;
+}
+
+/* second level */
+/* line 326, SiteBase.scss */
+nav > ul > li > ul {
+  margin: 24px 0px 0px -1px;
+  padding: 0px;
+  display: none;
+  position: absolute;
+  border: 1px solid #dbdbdb;
+}
+
+/* line 327, SiteBase.scss */
+nav > ul > li > ul > li {
+  list-style-type: none;
+  margin: 0px;
+  border: none;
+}
+
+/* line 328, SiteBase.scss */
+nav > ul > li > ul > li > a {
+  display: block;
+  text-decoration: none;
+}
+
+/* line 331, SiteBase.scss */
+nav > ul > li > ul > li:hover > ul {
+  display: block;
+}
+
+/* third level */
+/* line 334, SiteBase.scss */
+nav > ul > li > ul > li > ul {
+  margin: -20px -1px 0px 90%;
+  padding: 0px;
+  display: none;
+  position: absolute;
+  border: 1px solid #dbdbdb;
+}
+
+/* line 335, SiteBase.scss */
+nav > ul > li > ul > li > ul > li {
+  list-style-type: none;
+  margin: 0px;
+  border: none;
+}
+
+/* line 336, SiteBase.scss */
+nav > ul > li > ul > li > ul > li > a {
+  display: block;
+  text-decoration: none;
+}
+
+/* deeper levels */
+/* line 340, SiteBase.scss */
+nav > ul > li > ul > li > ul ul {
+  display: none;
+}
+
+/* Breadcrumb */
+/* line 344, SiteBase.scss */
+nav ul.breadcrumb {
+  border: none;
+  display: inline-block;
+  margin: -9px;
+}
+
+/* line 351, SiteBase.scss */
+nav ul.breadcrumb li {
+  border: none;
+  background: none;
+  display: block;
+  margin: 0 2px -1px 0;
+}
+
+/* line 359, SiteBase.scss */
+nav ul.breadcrumb li:after {
+  content: "/";
+}
+
+/* line 364, SiteBase.scss */
+nav ul.breadcrumb li.last:after {
+  content: "";
+}
+
+/* line 369, SiteBase.scss */
+nav ul.breadcrumb li a {
+  padding: 0 9px;
+  display: block;
+  color: #5F97AF;
+  font-size: 100%;
+}
+
+/* line 377, SiteBase.scss */
+nav ul.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+/* line 383, SiteBase.scss */
+#branding {
+  display: none;
+  font-family: 'Lobster', Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 2.9em;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 394, SiteBase.scss */
+#branding a {
+  text-decoration: none;
+  color: #434343;
+}
+
+/* line 407, SiteBase.scss */
+#content header {
+  display: none;
+}
+
+/* Zones */
+/* line 428, SiteBase.scss */
+.zone {
+  padding: 12px;
+  /*  Enable this to see zone visualizations
+  background-color: yellow;
+  box-shadow:inset 0 0 1px purple;
+  -moz-box-shadow:inset 0 0 1px purple;
+  -webkit-box-shadow:inset 0 0 1px purple;
+  */
+}
+
+/* line 438, SiteBase.scss */
+.zone-header {
+  padding: 30px 0 30px 12px;
+  position: relative;
+}
+
+/* line 439, SiteBase.scss */
+.zone-navigation {
+  padding: 0;
+}
+
+/* line 456, SiteBase.scss */
+.zone-footer {
+  color: #999999;
+}
+
+/* Main
+***************************************************************/
+/* Content lists and details */
+/* line 464, SiteBase.scss */
+.content-description {
+  font-size: 1.154em;
+}
+
+/* line 465, SiteBase.scss */
+.content-items {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 466, SiteBase.scss */
+.content-items li {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 467, SiteBase.scss */
+.content-items .content-item {
+  border-top: 1px solid #dbdbdb;
+  padding: 6px 0 6px 0;
+}
+
+/* line 469, SiteBase.scss */
+.content-items .content-item header h1 {
+  font-size: 1.308em;
+  color: #434343;
+}
+
+/* line 470, SiteBase.scss */
+.content-items .content-item header h1 a {
+  color: #434343;
+}
+
+/* Tags */
+/* line 474, SiteBase.scss */
+.tags {
+  margin-top: 12px;
+}
+
+/* line 475, SiteBase.scss */
+.tags a {
+  background-color: #dbdbdb;
+  padding: 3px 6px;
+  color: #434343;
+}
+
+/* line 476, SiteBase.scss */
+.tags a:hover {
+  background-color: #434343;
+  color: #fff;
+}
+
+/* Metadata */
+/* line 479, SiteBase.scss */
+.metadata {
+  margin: 0 0 12px 0;
+  color: #999;
+  font-size: 0.846em;
+}
+
+/* line 480, SiteBase.scss */
+.metadata .published {
+  display: inline;
+  margin: 0 6px 0 0;
+}
+
+/* line 481, SiteBase.scss */
+.metadata .comment-count {
+  display: inline;
+}
+
+/* Comments */
+/* line 485, SiteBase.scss */
+#comments {
+  margin: 24px 0 0 0;
+  padding: 0;
+}
+
+/* line 486, SiteBase.scss */
+.comment-form {
+  margin: 24px 0 0 0;
+  padding: 0;
+}
+
+/* line 487, SiteBase.scss */
+.comments {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 488, SiteBase.scss */
+.comments li {
+  margin: 12px 0 0 0;
+  padding: 12px;
+  border: 1px solid #dbdbdb;
+}
+
+/* line 489, SiteBase.scss */
+.comment {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 490, SiteBase.scss */
+.comment h4 {
+  font-size: 1.077em;
+}
+
+/* line 493, SiteBase.scss */
+.comment .reply {
+  float: right;
+}
+
+/* line 495, SiteBase.scss */
+.comment-form #comment-by {
+  font-size: 1.231em;
+  font-weight: normal;
+  margin: 0 0 1.2em 0;
+  border: none;
+}
+
+/* line 496, SiteBase.scss */
+.comment-form .comment-text {
+  width: 33.2em;
+}
+
+/* line 497, SiteBase.scss */
+.comment-form input[type="text"] {
+  width: 32em;
+}
+
+/* line 498, SiteBase.scss */
+.comment-form li {
+  border: inherit;
+  margin: inherit;
+  padding: inherit;
+}
+
+/* line 500, SiteBase.scss */
+.comment-count {
+  font-size: 1.231em;
+}
+
+/* Confirmations */
+/* line 503, SiteBase.scss */
+.message, .validation-summary-errors {
+  margin: 10px 0 4px 0;
+  padding: 4px;
+}
+
+/* line 504, SiteBase.scss */
+.messages a {
+  font-weight: bold;
+}
+
+/* line 505, SiteBase.scss */
+.message-Information {
+  background: #e6f1c9;
+  /* green */
+  border: 1px solid #cfe493;
+  color: #062232;
+}
+
+/* line 506, SiteBase.scss */
+.message-Warning {
+  background: #fdf5bc;
+  /* yellow */
+  border: 1px solid #ffea9b;
+}
+
+/* line 507, SiteBase.scss */
+.critical.message, .validation-summary-errors, .message-Error {
+  background: #e68585;
+  /* red */
+  border: 1px solid #990808;
+  color: #fff;
+}
+
+/* Secondary
+***************************************************************/
+/* Aside Zones */
+/* If zone 1 is on */
+/* line 515, SiteBase.scss */
+.aside-1 #layout-content {
+  float: right;
+  width: 600px;
+}
+
+/* line 516, SiteBase.scss */
+.aside-1 .aside-first {
+  float: left;
+  width: 360px;
+}
+
+/* If zone 2 is on */
+/* line 519, SiteBase.scss */
+.aside-2 #layout-content {
+  float: left;
+  width: 600px;
+}
+
+/* line 520, SiteBase.scss */
+.aside-2 .aside-second {
+  float: right;
+  width: 360px;
+}
+
+/* If zones 1, 2 are on */
+/* line 523, SiteBase.scss */
+.aside-12 #layout-content {
+  width: 600px;
+}
+
+/* line 524, SiteBase.scss */
+.aside-12 .aside-first, .aside-12 .aside-second {
+  width: 180px;
+}
+
+/* line 525, SiteBase.scss */
+.aside-12 .aside-first, .aside-12 .aside-second, .aside-12 #layout-content {
+  float: left;
+}
+
+/* Tripel Zones*/
+/* line 528, SiteBase.scss */
+#layout-tripel > div {
+  float: left;
+  width: 960px;
+}
+
+/*2 zones on */
+/* line 531, SiteBase.scss */
+.tripel-12 #layout-tripel > div {
+  width: 480px;
+}
+
+/* If zones 1, 2 are on */
+/* line 532, SiteBase.scss */
+.tripel-23 #layout-tripel > div {
+  width: 480px;
+}
+
+/* If zones 2, 3 are on */
+/* line 533, SiteBase.scss */
+.tripel-13 #layout-tripel > div {
+  width: 480px;
+}
+
+/* If zones 1, 3 are on */
+/*3 zones on */
+/* line 536, SiteBase.scss */
+.tripel-123 #layout-tripel > div {
+  width: 320px;
+}
+
+/* If zones 1, 2, 3 are on */
+/* Quad Footer Zones */
+/* line 539, SiteBase.scss */
+#footer-quad > div {
+  float: left;
+  width: 240px;
+}
+
+/*1 zone on */
+/* line 542, SiteBase.scss */
+.split-1 #footer-quad-first {
+  width: 960px;
+}
+
+/* If zone 1 is on */
+/* line 543, SiteBase.scss */
+.split-2 #footer-quad-second {
+  width: 960px;
+}
+
+/* If zone 2 is on */
+/* line 544, SiteBase.scss */
+.split-3 #footer-quad-third {
+  width: 960px;
+}
+
+/* If zone 3 is on */
+/* line 545, SiteBase.scss */
+.split-4 #footer-quad-fourth {
+  width: 960px;
+}
+
+/* If zone 4 is on */
+/*2 zones on */
+/* line 548, SiteBase.scss */
+.split-12 #footer-quad-first, .split-12 #footer-quad-second {
+  width: 480px;
+}
+
+/* If zones 1, 2 are on */
+/* line 549, SiteBase.scss */
+.split-13 #footer-quad-first, .split-13 #footer-quad-third {
+  width: 480px;
+}
+
+/* If zones 1, 3 are on */
+/* line 550, SiteBase.scss */
+.split-14 #footer-quad-first, .split-14 #footer-quad-fourth {
+  width: 480px;
+}
+
+/* If zones 1, 4 are on */
+/* line 551, SiteBase.scss */
+.split-23 #footer-quad-second, .split-23 #footer-quad-third {
+  width: 480px;
+}
+
+/* If zones 2, 3 are on */
+/* line 552, SiteBase.scss */
+.split-24 #footer-quad-second, .split-24 #footer-quad-fourth {
+  width: 480px;
+}
+
+/* If zones 2, 4 are on */
+/* line 553, SiteBase.scss */
+.split-34 #footer-quad-third, .split-34 #footer-quad-fourth {
+  width: 480px;
+}
+
+/* If zones 3, 4 are on */
+/*3 zones on */
+/* line 556, SiteBase.scss */
+.split-234 #footer-quad-second {
+  width: 480px;
+}
+
+/* If zones 2, 3, 4 are on */
+/* line 557, SiteBase.scss */
+.split-134 #footer-quad-first {
+  width: 480px;
+}
+
+/* If zones 1, 3, 4 are on */
+/* line 558, SiteBase.scss */
+.split-124 #footer-quad-fourth {
+  width: 480px;
+}
+
+/* If zones 1, 2, 4 are on */
+/* line 559, SiteBase.scss */
+.split-123 #footer-quad-third {
+  width: 480px;
+}
+
+/* If zones 1, 2, 3 are on */
+/*3 zones on - alternate layout*/
+/*.split-123 #footer-quad-first, .split-123 #footer-quad-second, .split-123 #footer-quad-third { width:320px; }*/
+/* If zones 1, 2, 3 are on */
+/*.split-124 #footer-quad-first, .split-124 #footer-quad-second, .split-124 #footer-quad-fourth { width:320px; }*/
+/* If zones 1, 2, 4 are on */
+/*.split-134 #footer-quad-first, .split-134 #footer-quad-third, .split-134 #footer-quad-fourth { width:320px; }*/
+/* If zones 1, 3, 4 are on */
+/*.split-234 #footer-quad-second, .split-234 #footer-quad-third, .split-234 #footer-quad-fourth { width:320px; }*/
+/* If zones 2, 3, 4 are on */
+/* Widgets
+***************************************************************/
+/* line 572, SiteBase.scss */
+.widget h1 {
+  font-size: 1.077em;
+}
+
+/* Edit Mode Widgets */
+/* These are the edit controls that appear when you're logged-in */
+/* line 576, SiteBase.scss */
+.widget-control {
+  position: relative;
+  border: 1px dotted #5f97af;
+}
+
+/* line 577, SiteBase.scss */
+.widget-control .manage-actions {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+/* line 578, SiteBase.scss */
+.widget-control .manage-actions a {
+  display: block;
+  background-color: #dbdbdb;
+  color: #434343;
+  padding: 3px 6px;
+}
+
+/* line 579, SiteBase.scss */
+.widget-control .manage-actions a:hover {
+  background-color: #434343;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Content Mode */
+/* line 582, SiteBase.scss */
+.content-control {
+  border: 1px dotted #5f97af;
+  overflow: auto;
+  position: relative;
+}
+
+/* line 583, SiteBase.scss */
+.content-control .manage-actions {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+/* line 584, SiteBase.scss */
+.content-control .manage-actions a {
+  display: block;
+  background-color: #dbdbdb;
+  color: #434343;
+  padding: 3px 6px;
+}
+
+/* line 585, SiteBase.scss */
+.content-control .manage-actions a:hover {
+  background-color: #434343;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Pager
+***************************************************************/
+/* line 592, SiteBase.scss */
+.pager {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+}
+
+/* line 593, SiteBase.scss */
+.pager li {
+  float: left;
+  padding: 0 12px 0 0;
+  margin: 0;
+}
+
+/* line 594, SiteBase.scss */
+.pager a, .pager span {
+  font-size: 1.077em;
+  display: block;
+  background-color: #dbdbdb;
+  padding: 6px 6px;
+  color: #434343;
+}
+
+/* line 595, SiteBase.scss */
+.pager a:hover {
+  background-color: #434343;
+  color: #fff;
+}
+
+/* line 596, SiteBase.scss */
+.pager span {
+  background-color: inherit;
+}
+
+/* Misc
+***************************************************************/
+/* line 602, SiteBase.scss */
+.small {
+  font-size: 0.615em;
+  margin-bottom: 1.875em;
+  line-height: 1.875em;
+}
+
+/* line 603, SiteBase.scss */
+.large {
+  font-size: 1.231em;
+  line-height: 2.231em;
+  margin-bottom: 1.25em;
+}
+
+/* line 604, SiteBase.scss */
+.hide {
+  display: none;
+}
+
+/* line 606, SiteBase.scss */
+.quiet {
+  color: #666;
+}
+
+/* line 607, SiteBase.scss */
+.loud {
+  color: #000;
+}
+
+/* line 608, SiteBase.scss */
+.highlight {
+  background: #ff0;
+}
+
+/* line 609, SiteBase.scss */
+.added {
+  background: #060;
+  color: #fff;
+}
+
+/* line 610, SiteBase.scss */
+.removed {
+  background: #900;
+  color: #fff;
+}
+
+/* line 612, SiteBase.scss */
+.first {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* line 613, SiteBase.scss */
+.last {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+/* line 614, SiteBase.scss */
+.top {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* line 615, SiteBase.scss */
+.bottom {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* line 617, SiteBase.scss */
+.credits {
+  float: left;
+}
+
+/* line 618, SiteBase.scss */
+.user-display {
+  display: none;
+  float: left;
+  padding: 0 12px;
+}
+
+/* line 622, SiteBase.scss */
+.login-form {
+  margin: 24px 0 0 0;
+}
+
+/* CSS 3 Enhancements 
+***************************************************************/
+/* line 629, SiteBase.scss */
+input[type="submit"], input[type="button"], button, .button, .button:link, .button:visited {
+  color: #333;
+  background: #F5F5F5;
+  background: -webkit-gradient(linear, left top, left bottom, from(whitesmoke), to(#cbcbcb));
+  background: -moz-linear-gradient(top, whitesmoke, #cbcbcb);
+  border: 1px solid #999;
+  cursor: pointer;
+  margin: .2em 0 2em 0;
+  padding: .3em 1.8em;
+  text-align: center;
+}
+
+/* line 646, SiteBase.scss */
+input[type="submit"]:hover, input[type="button"]:hover,
+input[type="submit"]:active, input[type="button"]:active,
+input[type="submit"]:focus, input[type="button"]:focus,
+button:hover, .button:hover,
+button:active, .button:active,
+button:focus, .button:focus {
+  text-decoration: none;
+  background: #ebebeb;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e1e1e1), to(#ebebeb));
+  background: -moz-linear-gradient(top, #e1e1e1, #ebebeb);
+}

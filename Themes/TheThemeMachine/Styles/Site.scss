@@ -1,0 +1,318 @@
+/*
+* @name Site scss
+* @version 1.0
+*
+* Site.scss
+*
+* Copyright (c) 2013 Triple M IT
+*
+* @description <p></p>
+*
+* Design and Implementation
+* 
+* @author <a href="mailto:stefan.ten.cate@triplemit.nl">Stefan ten Cate</a>
+* @company <a href="http://triplemit.nl">Triple M IT</a>
+*
+*
+* Permission is hereby granted, free of charge, to any person
+* obtaining a copy of this software and associated documentation
+* files (the "Software"), to deal in the Software without
+* restriction, including without limitation the rights to use,
+* copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the
+* Software is furnished to do so, subject to the following
+* conditions:
+* 
+* The above copyright notice and this permission notice shall be
+* included in all copies or substantial portions of the Software.
+* 
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+* EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+* OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+* NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+* HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+* FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+* OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+/**
+ * WARNING
+ * Don't edit the file Site.css manually
+ * Any change made to this file will overwritten by Scout
+ * 
+ * If you want to change the stylesheet. You should put them in the
+ * sass file Site.scss.
+ */
+
+ // Imports
+ /**
+  * Include the basic theme
+  */
+ @import '_base/SiteBase.scss';
+
+ @import 'compass/css3';
+ @import "compass/layout/stretching";
+ @import "compass/utilities";
+
+ @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+ $font-family: 'Droid Sans' !Default;
+
+ // Color definitions
+$apple-blue: rgb(1, 124, 254);
+$APPLE-BLUE: #017CFE;
+$apple-blue-light: rgb(90, 198, 255);
+$apple-red: rgb(255, 62, 62);
+$apple-orange: rgb(246, 135, 17); 
+$APPLE-ORANGE: #F68711;
+$apple-yellow: rgb(255, 224, 0);
+$apple-green: rgb(58, 196, 0);
+$apple-black: rgb(31, 31, 31);
+$apple-black2: rgb(43, 43, 43);
+$apple-grey: rgb(188, 189, 193);
+$apple-grey2: rgb(148, 149, 153);
+$APPLE-GREY: #BCBDC1;
+$apple-purple: rgb(150, 61, 151);
+
+$apple-background-color: rgb(240, 239, 245);
+
+
+// Header definitions
+$box-height: 200px;
+$box-width: 200px;
+
+.sao-header {
+  @include display-box;
+  @include box-orient(horizontal);
+  @include box-align(stretch);
+  @include box-direction(reverse);
+
+  // IE 10+ properties
+  display:-ms-flexbox;
+  -ms-flex-direction: row-reverse;
+  -ms-flex-align: stretch;
+
+  height: $box-height;
+  width: 100%;
+
+  border-bottom: 2px solid $apple-purple;
+
+  .content-header, .left-header, .img-header {
+    padding: 20px;
+  }
+
+  .content-header {
+    @include box-flex(4);
+    -ms-flex: 4;
+   
+
+    a:first-child {
+        text-decoration: none;
+        float: right;
+        padding: 0px 10px 5px 10px;
+        border: none;
+        color: $apple-blue;
+        font-size: 2em;
+
+        margin-top: 150px;
+    }
+    a {
+        text-decoration: none;
+        float: right;
+        padding: 0px 10px 5px 10px;
+        border-right: 2px solid $apple-purple;
+         
+        color: $apple-blue;
+        font-size: 2em;
+
+        margin-top: 150px;
+    }
+
+    a:hover, a:active {
+        color: $apple-grey;
+    }
+
+    background-color: none;
+  }
+
+  .img-header {
+    @include box-flex(1);
+    -ms-flex: 1;
+
+    img {
+        margin: 21px 0px 0px 0px;
+        width: 150px;
+    }
+  }
+
+  .left-header {
+    @include box-flex(2);
+    -ms-flex: 2;
+
+    @include box-sizing(content-box);
+  
+    display: block;
+    background: $apple-purple;
+
+    color: tint($apple-green, 50%);
+    font-size: 2.5em;
+    
+    width: 250px;
+
+    margin-right: 1px;
+
+    span {
+        display: inline-block;
+        @include text-shadow(rgba($apple-green, 0.2) 1px 1px 0, rgba($apple-green, 0.2) 2px 2px 0, rgba($apple-green, 0.2) 3px 3px 0);
+
+        line-height: 50px;
+        text-align: center;
+        vertical-align: bottom;
+    }
+  }
+}
+
+.table-home {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    table {
+        @include table-scaffolding;
+        @include inner-table-borders(2px, $apple-purple);
+        //@include outer-table-borders(1px, $apple-blue);
+
+        border-spacing: 0;
+        margin-left: 50px;
+        margin-right:auto;
+    }
+
+    td {
+        width: 100px;
+        height: 100px;
+
+        padding: 0;
+        margin: 0;
+    }
+    img {
+        padding: 0;
+        margin: 0;
+
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.line {
+    border-top:2px solid $apple-purple;
+    margin-bottom: 50px;
+}
+
+.sao-footer {
+    @include display-box;
+    @include box-orient(horizontal);
+    @include box-align(stretch);
+     
+    // IE 10+ properties
+    display:-ms-flexbox;
+    //-ms-flex-direction: row-reverse;
+    -ms-flex-align: stretch;
+
+    height: 30px;
+    width: 100%;
+    
+    margin: 50px 0px;
+    text-align: center;
+
+    .menu, .empty-menu {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .menu:first-child {
+        @include box-flex(1);
+        -ms-flex: 1;
+
+        border-top: 1px solid $apple-blue;
+        border-bottom: 1px solid $apple-blue;
+        border-left: 1px solid $apple-blue;
+        border-right: 1px solid $apple-blue;
+                
+        a {
+            text-decoration: none;
+            color: $apple-blue;
+            font-weight: bold;
+            font-size: 1.0em;
+        }
+
+        a:hover, a:active {
+            color: $apple-grey;
+        }
+    }
+
+    .menu {
+        @include box-flex(1);
+        -ms-flex: 1;
+
+        border-top: 1px solid $apple-blue;
+        border-bottom: 1px solid $apple-blue;
+        border-right: 1px solid $apple-blue;
+
+        a {
+            text-decoration: none;
+            color: $apple-blue;
+            font-weight: bold;
+            font-size: 1.0em;
+        }
+
+        a:hover, a:active {
+            color: $apple-grey;
+        }
+    }
+
+    .menu:last-child {
+        @include box-flex(1);
+        -ms-flex: 1;
+
+        border-top: 1px solid $apple-blue;
+        border-bottom: 1px solid $apple-blue;
+        border-right: 1px solid $apple-blue;
+
+        a {
+            text-decoration: none;
+            color: $apple-blue;
+            font-weight: bold;
+            font-size: 1.0em;
+        }
+
+        a:hover, a:active {
+            color: $apple-grey;
+        }
+    }
+    .empty-menu {
+        
+         @include box-flex(4);
+        -ms-flex: 4;
+
+        color: white !important;
+    }
+}
+
+.aside-2 .aside-second {
+    width: 200px !important;
+    height: 360px;
+    text-overflow: ellipsis;
+    overflow: auto;
+
+    h1 {
+        color: tint($apple-red, 40%);
+        font-size: 1.5em;
+    }
+
+    li {
+        font-size: 0.9em;
+        color: tint($apple-grey, 30%);
+    }   
+    
+}
+
